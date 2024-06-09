@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <>
       <nav className={classNames("w-full bg-white flex justify-between flex-1 p-5")} id='home'>
-        <h1 className="font-extrabold text-3xl md:w-[20%] ">
+        <h1 className="font-extrabold text-3xl md:w-[20%] text-zinc-900">
           LawConnect<span className="text-amber-600">.</span>
         </h1>
         <div className="hidden md:flex items-center justify-end w-[80%] ">
