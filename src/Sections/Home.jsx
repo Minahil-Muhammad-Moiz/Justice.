@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section id='home'
       className={classNames(
-        " bg-[url('./Images/lawhammer.jpg')] h-[100vh] w-[100vw] bg-cover bg-no-repeat "
+        " bg-[url('./Images/lawhammer.jpg')] h-[100vh] w-full bg-cover bg-no-repeat "
       )}
     >
       <div
