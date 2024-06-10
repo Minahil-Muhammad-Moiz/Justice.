@@ -11,13 +11,13 @@ const Home = () => {
     >
       <div
         className={classNames(
-          "backdrop-blur-xl w-full h-full md:backdrop-blur-0"
+          "backdrop-blur-xl w-full h-full lg:backdrop-blur-0"
         )}
       >
         <Nav />
         <div
           className={classNames(
-            "flex flex-col justify-center items-start md:fixed md:right-0 flex-wrap px-8 md:w-[50%] h-[70%] font-serif "
+            "flex flex-col justify-center items-start lg:fixed lg:right-0 flex-wrap px-8 lg:w-[50%] h-[70%] font-serif "
           )}
         >
           <h1 className={classNames("text-7xl font-extrabold py-2 text-zinc-800 ")}>

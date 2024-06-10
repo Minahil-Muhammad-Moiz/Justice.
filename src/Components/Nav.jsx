@@ -14,21 +14,21 @@ const Nav = () => {
         <h1 className="font-extrabold text-3xl md:w-[20%] text-zinc-900">
           LawConnect<span className="text-amber-600">.</span>
         </h1>
-        <div className="hidden md:flex items-center justify-end w-[80%] ">
+        <div className="hidden xl:flex items-center justify-end w-[80%] ">
           {NavLinks.map((item) => (
             <a href={item.href} className={classNames("px-8 hover:text-amber-600")}>
               {item.title}
             </a>
           ))}
         </div>
-        <div className="md:hidden font-extrabold text-3xl">
+        <div className="xl:hidden font-extrabold text-3xl">
           <button onClick={toggleNav}>{isOpen ? <FiX /> : <FiMenu />}</button>
         </div>
       </nav>
       {isOpen && (
             <div
               className={classNames(
-                "fixed w-full bg-amber-600 font-sans p-5 flex flex-col items-center text-lg md:hidden focus:translate-x-14 transition-all"
+                "fixed w-full bg-amber-600 font-sans p-5 flex flex-col items-center text-lg xl:hidden focus:translate-x-14 transition-all"
               )}
             >
               {NavLinks.map((item) => (
