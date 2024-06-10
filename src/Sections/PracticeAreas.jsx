@@ -1,8 +1,6 @@
 import classNames from "classnames";
 import React from "react";
-import { BiBriefcase, BiTargetLock } from "react-icons/bi";
-import { BsPeople } from "react-icons/bs";
-import { MdCorporateFare } from "react-icons/md";
+import { practiceAreas } from "../Components/Contants";
 
 const PracticeAreas = () => {
   return (
@@ -25,42 +23,15 @@ const PracticeAreas = () => {
         </button>
       </div>
       <div className={classNames(divClass)}>
-        <div className={classNames(subDivs)}>
+        {practiceAreas.map((item)=>(<div className={classNames(subDivs)}>
           <div className={classNames(icons)}>
-            <BiBriefcase />
+            {item.icon}
           </div>
           <div className={classNames(pTag, "px-4")}>
-            <p className={classNames(iconPTag)}>Banking and Finance Law</p>
-            <p>Far far away, far from the mountains, far from the countries</p>
+            <p className={classNames(iconPTag)}>{item.title}</p>
+            <p>{item.desp}</p>
           </div>
-        </div>
-        <div className={classNames(subDivs)}>
-          <div className={classNames(icons)}>
-            <BsPeople />
-          </div>
-          <div className={classNames(pTag, "px-4")}>
-            <p className={classNames(iconPTag)}>Commercial Law</p>
-            <p>Far far away, far from the mountains, far from the countries</p>
-          </div>
-        </div>
-        <div className={classNames(subDivs)}>
-          <div className={classNames(icons)}>
-            <MdCorporateFare />
-          </div>
-          <div className={classNames(pTag, "px-4")}>
-            <p className={classNames(iconPTag)}>Corporate Law</p>
-            <p>Far far away, far from the mountains, far from the countries</p>
-          </div>
-        </div>
-        <div className={classNames(subDivs)}>
-          <div className={classNames(icons)}>
-            <BiTargetLock />
-          </div>
-          <div className={classNames(pTag, "px-4")}>
-            <p className={classNames(iconPTag)}>Criminal Law</p>
-            <p>Far far away, far from the mountains, far from the countries</p>
-          </div>
-        </div>
+        </div>))}
       </div>
     </section>
   );

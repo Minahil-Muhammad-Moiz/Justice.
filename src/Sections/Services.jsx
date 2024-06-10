@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React from "react";
+import { services } from "../Components/Contants";
 
 const Services = () => {
   return (
@@ -11,46 +12,15 @@ const Services = () => {
         </h2>
       </div>
       <div className={classNames(divClass,'w-[700px]')}>
-        <div className={classNames(subDivs)}>
+        {services.map((item)=>(<div className={classNames(subDivs)}>
           <p className={classNames(pHeadTag)}>
-            <span className={classNames(spanTag)}>90</span>+
+            <span className={classNames(spanTag)}>{item.number}</span>+
           </p>
-          <p className={classNames(pSubHead)}>Awards</p>
+          <p className={classNames(pSubHead)}>{item.title}</p>
           <p className={classNames(pTag)}>
-            Separated they live in Bookmarksgrove right at the coast of the
-            Semantics.
+            {item.desp}
           </p>
-        </div>
-        <div className={classNames(subDivs)}>
-          <p className={classNames(pHeadTag)}>
-            <span className={classNames(spanTag)}>3K</span>+
-          </p>
-          <p className={classNames(pSubHead)}>Cases Wins</p>
-          <p className={classNames(pTag)}>
-            Separated they live in Bookmarksgrove right at the coast of the
-            Semantics.
-          </p>
-        </div>
-        <div className={classNames(subDivs)}>
-          <p className={classNames(pHeadTag)}>
-            <span className={classNames(spanTag)}>2K</span>+
-          </p>
-          <p className={classNames(pSubHead)}>Clients</p>
-          <p className={classNames(pTag)}>
-            Separated they live in Bookmarksgrove right at the coast of the
-            Semantics.
-          </p>
-        </div>
-        <div className={classNames(subDivs)}>
-          <p className={classNames(pHeadTag)}>
-            <span className={classNames(spanTag)}>200</span>+
-          </p>
-          <p className={classNames(pSubHead)}>Attorneys</p>
-          <p className={classNames(pTag)}>
-            Separated they live in Bookmarksgrove right at the coast of the
-            Semantics.
-          </p>
-        </div>
+        </div>))}
       </div>
     </section>
   );
