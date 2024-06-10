@@ -59,10 +59,10 @@ const Services = () => {
 export default Services;
 
 const sectionClass =
-  "bg-neutral-800 text-neutral-400 flex flex-row justify-evenly flex-wrap w-full font-sans p-8 ";
+  "bg-neutral-800 text-neutral-400 flex flex-row justify-center items-center flex-wrap w-full font-sans p-8  ";
 const divClass =
-  " m-4 md:my-6 flex flex-col md:flex-row md:flex-wrap justify-start items-center ";
-const subDivs = "flex flex-col justify-center items-start p-2 w-full md:w-[40%]";
+  " m-4 md:my-6 flex flex-col md:flex-row md:flex-wrap justify-center items-center";
+const subDivs = "flex flex-col justify-center items-start p-2 w-full md:w-[46%]";
 const h2Tag = "text-white tracking-tighter text-4xl md:text-6xl";
 const pHeadTag = 'md:text-8xl text-7xl text-white pb-4';
 const spanTag = 'text-amber-600';
