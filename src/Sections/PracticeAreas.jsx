@@ -23,7 +23,7 @@ const PracticeAreas = () => {
         </button>
       </div>
       <div className={classNames(divClass)}>
-        {practiceAreas.map((item)=>(<div className={classNames(subDivs)}>
+        {practiceAreas.map((item)=>(<div className={classNames(subDivs, transitionDelay)}>
           <div className={classNames(icons)}>
             {item.icon}
           </div>
@@ -45,5 +45,6 @@ const divClass = "w-[500px] m-4 md:m-10 flex flex-col justify-center items-start
 const h2Tag = "text-white tracking-tighter text-4xl md:text-6xl";
 const pTag = "tracking-wide ";
 const subDivs = "flex flex-row justify-center items-center py-4 cursor-pointer hover:translate-x-2";
+const transitionDelay = "transition-all delay-150";
 const icons = "p-4 mx-2 rounded-full bg-amber-600 text-white text-2xl";
 const iconPTag = 'text-amber-600 font-medium';
