@@ -28,7 +28,7 @@ const Home = () => {
           </p>
           <button
             className={classNames(
-              "font-sans mx-4 bg-amber-600 rounded-full px-6 py-4 font-medium text-white text-sm"
+              "font-sans mx-4 bg-amber-600 rounded-full px-6 py-4 font-medium text-white text-sm hover:bg-amber-700"
             )}
           >
             FREE CONSULTATION
