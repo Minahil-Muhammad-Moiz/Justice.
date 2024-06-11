@@ -50,12 +50,12 @@ const sectionClass =
   "bg-neutral-800 text-neutral-500 flex flex-col justify-center items-center w-full font-sans p-8 ";
 const h2Tag = "text-white text-4xl md:text-6xl ";
 const divClass =
-  " m-4 flex flex-col md:flex-row justify-between items-stretch md:flex-wrap w-[90%] md:w-[80%] p-4 ";
+  " m-4 flex flex-col md:flex-row justify-between items-stretch md:flex-wrap w-[90%] md:w-[80%] p-4";
 const subDivs =
-  "flex flex-col justify-center items-start px-2 py-4 my-2 md:m-2 w-full md:w-[45%] lg:w-[22%] bg-white rounded-xl";
+  "flex flex-col justify-center items-start px-2 pt-4 my-2 md:m-2 w-full md:w-[45%] lg:w-[22%] bg-white rounded-xl";
 const pTag = "tracking-wide px-2 py-6";
 const icons = "p-4 mx-2 rounded-full bg-amber-600 text-white text-2xl";
 const iconPTag = "text-amber-600 font-medium";
 const transitionDelay = "transition-all delay-150";
 const btnClass =
-  "flex justify-between items-center w-28 text-black text-sm my-2 cursor-pointer group";
+  "flex justify-between items-center w-28 text-black text-sm my-2 cursor-pointer group mb-0";

@@ -1,7 +1,14 @@
 import { BiBriefcase, BiTargetLock } from "react-icons/bi";
 import { BsPeople } from "react-icons/bs";
-import { FaFacebook, FaInstagram, FaLinkedin, FaPinterest, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaTwitter,
+} from "react-icons/fa";
 import { MdCorporateFare } from "react-icons/md";
+import client from '../Images/client.jpg';
 
 export const NavLinks = [
   { title: "Home", href: "#home" },
@@ -63,7 +70,7 @@ export const practice_exp = [
   { exp: "Banking Law" },
   { exp: "Commercial Law" },
   { exp: "Corporate Law" },
-  { exp: "Family Law" }
+  { exp: "Family Law" },
 ];
 
 export const services_exp = [
@@ -71,13 +78,53 @@ export const services_exp = [
   { exp: "Employment" },
   { exp: "Labor Law" },
   { exp: "Property Law" },
-  { exp: "Prosecution" }
+  { exp: "Prosecution" },
 ];
 
-export const connect =[
-  {icon: <FaInstagram/>},
-  {icon: <FaTwitter/>},
-  {icon: <FaFacebook/>},
-  {icon: <FaLinkedin/>},
-  {icon: <FaPinterest/>}
-]
+export const connect = [
+  { icon: <FaInstagram /> },
+  { icon: <FaTwitter /> },
+  { icon: <FaFacebook /> },
+  { icon: <FaLinkedin /> },
+  { icon: <FaPinterest /> },
+];
+
+export const reviews = [
+  {
+    profileImg: client,
+    name: "John Doe",
+    prof: "CEO, Co-Founder",
+    review:
+      "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
+  },{
+    profileImg: client,
+    name: "John Doe",
+    prof: "CEO, Co-Founder",
+    review:
+      "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
+  },{
+    profileImg: client,
+    name: "John Doe",
+    prof: "CEO, Co-Founder",
+    review:
+      "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
+  },{
+    profileImg: client,
+    name: "John Doe",
+    prof: "CEO, Co-Founder",
+    review:
+      "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
+  },{
+    profileImg: client,
+    name: "John Doe",
+    prof: "CEO, Co-Founder",
+    review:
+      "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
+  },{
+    profileImg: client,
+    name: "John Doe",
+    prof: "CEO, Co-Founder",
+    review:
+      "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
+  },
+];
