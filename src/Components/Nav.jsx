@@ -10,13 +10,16 @@ const Nav = () => {
   };
   return (
     <>
-      <nav className={classNames("w-full bg-white flex justify-between flex-1 p-4 ")} id='home'>
-        <h1 className="font-extrabold text-3xl md:w-[20%] text-zinc-900">
+      <nav className={classNames(nav)} id="home">
+        <h1 className={classNames(h1Tag)}>
           LawConnect<span className="text-amber-600">.</span>
         </h1>
-        <div className="hidden lg:flex items-center justify-end w-[80%] ">
+        <div className={classNames(expNav)}>
           {NavLinks.map((item) => (
-            <a href={item.href} className={classNames("px-8 hover:text-amber-600")}>
+            <a
+              href={item.href}
+              className={classNames("px-8 hover:text-amber-600")}
+            >
               {item.title}
             </a>
           ))}
@@ -26,23 +29,25 @@ const Nav = () => {
         </div>
       </nav>
       {isOpen && (
-            <div
-              className={classNames(
-                "fixed w-full bg-amber-600 font-sans p-5 flex flex-col items-center text-lg lg:hidden focus:translate-x-14 transition-all"
-              )}
+        <div className={classNames(navLink)}>
+          {NavLinks.map((item) => (
+            <a
+              href={item.href}
+              className={classNames("p-2 hover:font-semibold ")}
             >
-              {NavLinks.map((item) => (
-                <a
-                  href={item.href}
-                  className={classNames("p-2 hover:font-semibold ")}
-                >
-                  {item.title}
-                </a>
-              ))}
-            </div>
-          )}
-      </>
-      );
+              {item.title}
+            </a>
+          ))}
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Nav;
+
+const nav = "w-full bg-white flex justify-between flex-1 p-4 ";
+const h1Tag = "font-extrabold text-3xl md:w-[20%] text-zinc-900";
+const expNav = "hidden lg:flex items-center justify-end w-[80%] ";
+const navLink =
+  "fixed w-full bg-amber-600 font-sans p-5 flex flex-col items-center text-lg lg:hidden focus:translate-x-14 transition-all";

@@ -20,8 +20,8 @@ const Reviews = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 900,
@@ -30,8 +30,8 @@ const Reviews = () => {
           slidesToScroll: 1,
           initialSlide: 0,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 480,
@@ -39,10 +39,10 @@ const Reviews = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+    ],
   };
   return (
     <section id="reviews" className={classNames(sectionClass)}>
@@ -51,16 +51,12 @@ const Reviews = () => {
           <span className="text-amber-600 font-bold">Happy</span> Clients
         </h2>
       </div>
-      <div className={classNames(divClass, 'slider-container')}>
+      <div className={classNames(divClass, "slider-container")}>
         <Slider {...settings}>
           {reviews.map((item) => (
             <div className={classNames(subDivs)}>
-              <div className={classNames(reviewDiv)}>
-                {item.review}
-              </div>
-              <div
-                className={classNames(profileDiv)}
-              >
+              <div className={classNames(reviewDiv)}>{item.review}</div>
+              <div className={classNames(profileDiv)}>
                 <img
                   src={item.profileImg}
                   alt="/"
@@ -76,7 +72,6 @@ const Reviews = () => {
             </div>
           ))}
         </Slider>
-
       </div>
     </section>
   );
@@ -88,7 +83,7 @@ const sectionClass =
   "bg-neutral-900 text-neutral-500 flex flex-col justify-center items-center w-full font-sans p-8 ";
 const h2Tag = "text-white text-4xl md:text-6xl ";
 const divClass = " m-4 w-[90%] md:w-[80%] p-4";
-const subDivs =
-  "flex flex-col justify-center items-start ";
-  const reviewDiv = "bg-white p-6 pb-14 md:pb-16 w-full clip-chat rounded rounded-t-lg";
-  const profileDiv = "flex flex-row justify-start items-center p-4 -mt-6";
+const subDivs = "flex flex-col justify-center items-start ";
+const reviewDiv =
+  "bg-white p-6 pb-14 md:pb-16 w-full clip-chat rounded rounded-t-lg";
+const profileDiv = "flex flex-row justify-start items-center p-4 -mt-6";

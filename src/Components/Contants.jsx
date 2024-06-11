@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { MdCorporateFare } from "react-icons/md";
-import client from '../Images/client.jpg';
+import client from "../Images/client.jpg";
 
 export const NavLinks = [
   { title: "Home", href: "#home" },
@@ -96,31 +96,36 @@ export const reviews = [
     prof: "CEO, Co-Founder",
     review:
       "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
-  },{
+  },
+  {
     profileImg: client,
     name: "John Doe",
     prof: "CEO, Co-Founder",
     review:
       "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
-  },{
+  },
+  {
     profileImg: client,
     name: "John Doe",
     prof: "CEO, Co-Founder",
     review:
       "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
-  },{
+  },
+  {
     profileImg: client,
     name: "John Doe",
     prof: "CEO, Co-Founder",
     review:
       "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
-  },{
+  },
+  {
     profileImg: client,
     name: "John Doe",
     prof: "CEO, Co-Founder",
     review:
       "Far far away, far from the mountains, far from the countries Vokila and Consonantia, there live the blind texts. Separated they live in. Separated they live in Bookmarkgrove right at the cost of the Semantices, a large language ocean.",
-  },{
+  },
+  {
     profileImg: client,
     name: "John Doe",
     prof: "CEO, Co-Founder",
